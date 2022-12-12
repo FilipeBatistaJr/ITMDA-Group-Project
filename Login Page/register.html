@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUX Games BETA</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    function Validation(){
+        var f_Name = document.clientForm.firstName.value;
+        var l_Name = document.clientForm.lastName.value;
+        var p_Number = document.clientForm.phoneNumber.value;
+        var email = document.clientForm.email.value;
+        var pass = document.clientForm.password.value;
+        var con_Pass = document.clientForm.confirmPassword.value;
+        
+
+        if (f_Name == "" || f_Name == null){
+        alert("Please enter your name!");
+        return false;
+        }
+        else if (l_Name == "" || l_Name == null){
+        alert("Please enter your surname!");
+        return false;
+        }
+        else if (p_Number == "" || p_Number == null){
+        alert("Please enter your phone number!");
+        return false;
+        } 
+        else if (email == "" || email == null){
+        alert("Please enter your email!");
+        return false;
+        } 
+        else if (pass == "" || pass == null){
+        alert("Please enter a password!");
+        return false;
+        }
+        else if (pass.length < 8){
+        alert("Password must be at least 8 characters long.");
+        return false;
+        }
+        else if (pass != con_Pass){
+        alert("Passwords do not match! Please make sure they match.");
+        return false;
+        } 
+        else if (email.includes("@") == false || email.includes(".") == false){
+        alert("Please enter a valid email!");
+        return false;
+        }
+        else{
+        alert("Submission Susccessful!");
+        return true;
+        }
+    }
+</script>
+<script type="text/javascript">
+    var database = openDatabase("AG_DB", "1.0", "Aux Games Database", 655355);
+     $(function(){
+            // insert data
+            $("#insert").click(function(){
+                var fName = $("#fn").val();
+                var lName = $("#ln").val();
+                var pNumber = $("#pn").val();
+                var email = $("#e").val();
+                var pass = $("#p").val();
+                database.transaction(function(transaction){
+                    var sqlQuery = "INSERT INTO tblUsers(First_Name, Last_Name, Phone_Number, Email, Password) VALUES(?, ?, ?, ?, ?);";
+                    transaction.executeSql(sqlQuery, [fName, lName, pNumber, email, pass], function(){
+                        alert("User successfully added");
+                    },function(transaction, err){
+                        alert(err.message)
+                    })
+                });
+            });
+            // insert data ends
+        });
+</script>
+
+<div class="container">
+    <form name="clientForm" action="login.html">
+        <img class="logo" src="images/logo.png" alt="Logo" style="background-color: #2c2828c7; border-radius: 20px;">
+        <h1 style="margin-top: 20px;">SIGN UP</h1>
+        <div class="textbox">
+            <input type="text" placeholder="First Name" value="" name="firstName" id="fn">
+        </div>
+        <t></t>
+        <div class="textbox">
+            <input type="text" placeholder="Last Name" value="" name="lastName" id="ln">
+        </div>
+        <div class="textbox">
+            <input type="text" placeholder="Phone Number" value="" name="phoneNumber" id="pn">
+        </div>
+        <div class="textbox">
+            <input type="text" placeholder="Email" value="" name="email" id="e">
+        </div>
+        <div class="textbox">
+            <input type="password" placeholder="Password" value="" name="password" id="p">
+        </div>
+        <div class="textbox">
+            <input type="password" placeholder="Confirm Password" value="" name="confirmPassword">
+        </div>
+        <button class="button" id="insert" onclick="Validation()">SIGN UP</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 1000vh;
+    align-items: center;
+}
+h1{
+    width: 129px; 
+    height: 40px; 
+    white-space: pre-wrap; 
+    /* word-wrap: break-word; */
+    /* word-break: break-word;  */
+    /* overflow: hidden;  */
+    font-weight: 800; 
+    font-style: normal;
+    font-family: Epilogue, serif; 
+    color: white; 
+    font-size: 40px; 
+    letter-spacing: -1.5px;
+    line-height: 1; 
+    text-align: left;
+}
+// .content {
+//     width: 450;
+//     height: 1500px;
+//     overflow: hidden;
+//     border-radius: 20px;
+// }
+.News {
+    width: 400px;
+    height: 330px;
+    background-color: #b22222;
+    border-radius: 5px;
+    overflow: hidden;
+    // // background-image: url(/* O que sabemos sobre GTA 6_ vazamentos, rumores e mais.jpg */);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // border-radius: 20px;
+}
+.slideshow{
+    margin-left: 1cm;
+    width: 250%;// 100% * number of slides
+    height: 182px;
+    display: flex;
+}
+.slide{
+    width: 100%; 
+    transition: 0.6s;
+    // height: 162px;
+    // display: flex;
+}
+// .slide input{
+//     display: none;
+// }
+// .slide img{
+//     width: 280px;
+//     height: 182px;
+// }
+
+.navigation{
+    position: absolute;
+    // width: 280px;
+    margin-top: 220px;
+    display: flex;
+    justify-content: center;
+}
+.bar{
+    width: 70px;
+    height: 10px;
+    border: 2px solid #add8e6;
+    padding: 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.bar:hover{
+    background:  #add8e6;
+}
+input[name="r_news"]{
+    position: absolute;
+    background-color: lightblue;
+    visibility: hidden;
+}
+// .bar:not(:last-child){
+//     margin-right: 30px;
+// }
+#rn1:checked ~ .first{
+    margin-left: 0;
+}
+#rn2:checked ~ .first{
+    margin-left: -13.15cm;
+}
+#rn3:checked ~ .first{
+    margin-left: -52.75cm;
+}

@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  width: 129px;
+  height: 40px;
+  margin-left: 10px;
+  white-space: pre-wrap;
+  font-weight: 800;
+  font-style: normal;
+  font-family: 'Epilogue', sans-serif;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: -1.5px;
+  line-height: 1;
+  text-align: left;
+}
+
+p {
+  font-weight: 200;
+  font-style: normal;
+  font-family: 'Epilogue', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.News {
+  width: 450px;
+  height: 330px;
+  margin-top: 50px;
+  margin-left: 10px;
+  background-color: #b22222;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.slideshow_N {
+  width: 500%;
+  height: 162px;
+  display: flex;
+}
+
+.slide_N {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.navigation_N {
+  position: absolute;
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.bar_N {
+  border: 2px solid #add8e6;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.bar_N:hover {
+  background: #add8e6;
+}
+
+input[name="r_news"] {
+  position: absolute;
+  background-color: lightblue;
+  visibility: hidden;
+}
+
+.bar_N:not(:last-child) {
+  margin-right: 30px;
+}
+
+#rn1:checked ~ .first {
+  margin-left: 0;
+}
+
+#rn2:checked ~ .first {
+  margin-left: -50%;
+}
+
+#rn3:checked ~ .first {
+  margin-left: -200%;
+}
+
+.Deals {
+  width: 450px;
+  height: 330px;
+  margin-top: 50px;
+  margin-left: 10px;
+  background-color: #00bfff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.slideshow_D {
+  width: 500%;
+  height: 162px;
+  display: flex;
+}
+
+.slide_D {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.navigation_D {
+  position: absolute;
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.bar_D {
+  border: 2px solid #add8e6;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.bar_D:hover {
+  background: #add8e6;
+}
+
+input[name="r_deals"] {
+  position: absolute;
+  background-color: #add8e6;
+  visibility: hidden;
+}
+
+.bar_D:not(:last-child) {
+  margin-right: 30px;
+}
+
+#rd1:checked ~ .first {
+  margin-left: 0;
+}
+
+#rd2:checked ~ .first {
+  margin-left: -50%;
+}
+
+#rd3:checked ~ .first {
+  margin-left: -200%;
+}
+
+.New_Releases {
+  width: 450px;
+  height: 330px;
+  margin-top: 50px;
+  margin-left: 10px;
+  background-color: #ffa07a;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.slideshow_NR {
+  width: 500%;
+  height: 162px;
+  display: flex;
+}
+
+.slide_NR {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.navigation_NR {
+  position: absolute;
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.bar_NR {
+  border: 2px solid #add8e6;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.bar_NR:hover {
+  background: #add8e6;
+}
+
+input[name="r_NewRel"] {
+  position: absolute;
+  background-color: #add8e6;
+  visibility: hidden;
+}
+
+.bar_NR:not(:last-child) {
+  margin-right: 30px;
+}
+
+#rnr1:checked ~ .first {
+  margin-left: 0;
+}
+
+#rnr2:checked ~ .first {
+  margin-left: -50%;
+}
+
+#rnr3:checked ~ .first {
+  margin-left: -200%;
+}
+
+.Recommended {
+  width: 450px;
+  height: 330px;
+  margin-top: 50px;
+  margin-left: 10px;
+  background-color: #008000;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.slideshow_R {
+  width: 500%;
+  height: 162px;
+  display: flex;
+}
+
+.slide_R {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.navigation_R {
+  position: absolute;
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.bar_R {
+  border: 2px solid #add8e6;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.bar_R:hover {
+  background: #add8e6;
+}
+
+input[name="r_rec"] {
+  position: absolute;
+  background-color: #add8e6;
+  visibility: hidden;
+}
+
+.bar_R:not(:last-child) {
+  margin-right: 30px;
+}
+
+#rr1:checked ~ .first {
+  margin-left: 0;
+}
+
+#rr2:checked ~ .first {
+  margin-left: -50%;
+}
+
+#rr3:checked ~ .first {
+  margin-left: -200%;
+}

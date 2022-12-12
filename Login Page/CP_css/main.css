@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+h1 {
+  margin-left: 10px;
+  white-space: pre-wrap;
+  font-weight: 800;
+  font-style: normal;
+  font-family: "Epilogue", sans-serif;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: -1.5px;
+  line-height: 1;
+  text-align: left;
+}
+
+p {
+  font-weight: 200;
+  font-style: normal;
+  font-family: "Epilogue", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+}
+/* header{
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  height:12vh;
+  background-color:#4e0808;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} */
+
+.container {
+  max-width: 550px;
+}
+/* Footer Starts */
+
+.footer {
+  background-color: #4e0808;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}
+
+menu {
+  display: flex;
+}
+
+.menu ul {
+  justify-content: center;
+  list-style: none;
+}
+
+.menu ul li {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  list-style: none;
+  padding-right: 10%;
+  padding-left: 5%;
+}
+
+.menu ul li a {
+  display: block;
+  transition: 0.5s;
+}
+
+.menu ul li a:hover {
+  background-color: #552d2d;
+}
+
+.menu-icons {
+  width: 50px;
+  height: 50px;
+}
+/* Footer Ends */
+
+.News {
+  width: 450px;
+  height: 330px;
+  margin-top: 50px;
+  margin-left: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.slideshow_N {
+  width: 500%;
+  height: 162px;
+  display: flex;
+}
+
+.slide_N {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.navigation_N {
+  position: absolute;
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.bar_N {
+  border: 2px solid #add8e6;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.bar_N:hover {
+  background: #add8e6;
+}
+
+input[name=r_news] {
+  position: absolute;
+  background-color: lightblue;
+  visibility: hidden;
+}
+
+.bar_N:not(:last-child) {
+  margin-right: 30px;
+}
+
+#rn1:checked ~ .first {
+  margin-left: 0;
+}
+
+#rn2:checked ~ .first {
+  margin-left: -50%;
+}
+
+#rn3:checked ~ .first {
+  margin-left: -200%;
+}
+
+.Deals {
+  width: 450px;
+  height: 330px;
+  margin-top: 50px;
+  margin-left: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.slideshow_D {
+  width: 500%;
+  height: 162px;
+  display: flex;
+}
+
+.slide_D {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.navigation_D {
+  position: absolute;
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.bar_D {
+  border: 2px solid #add8e6;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.bar_D:hover {
+  background: #add8e6;
+}
+
+input[name=r_deals] {
+  position: absolute;
+  background-color: #add8e6;
+  visibility: hidden;
+}
+
+.bar_D:not(:last-child) {
+  margin-right: 30px;
+}
+
+#rd1:checked ~ .first {
+  margin-left: 0;
+}
+
+#rd2:checked ~ .first {
+  margin-left: -50%;
+}
+
+#rd3:checked ~ .first {
+  margin-left: -200%;
+}
+
+.New_Releases {
+  width: 450px;
+  height: 330px;
+  margin-top: 50px;
+  margin-left: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.slideshow_NR {
+  width: 500%;
+  height: 162px;
+  display: flex;
+}
+
+.slide_NR {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.navigation_NR {
+  position: absolute;
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.bar_NR {
+  border: 2px solid #add8e6;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.bar_NR:hover {
+  background: #add8e6;
+}
+
+input[name=r_NewRel] {
+  position: absolute;
+  background-color: #add8e6;
+  visibility: hidden;
+}
+
+.bar_NR:not(:last-child) {
+  margin-right: 30px;
+}
+
+#rnr1:checked ~ .first {
+  margin-left: 0;
+}
+
+#rnr2:checked ~ .first {
+  margin-left: -50%;
+}
+
+#rnr3:checked ~ .first {
+  margin-left: -200%;
+}
+
+.Recommended {
+  width: 450px;
+  height: 330px;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 23%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.slideshow_R {
+  width: 500%;
+  height: 162px;
+  display: flex;
+}
+
+.slide_R {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.navigation_R {
+  position: absolute;
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.bar_R {
+  border: 2px solid #add8e6;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.bar_R:hover {
+  background: #add8e6;
+}
+
+input[name=r_rec] {
+  position: absolute;
+  background-color: #add8e6;
+  visibility: hidden;
+}
+
+.bar_R:not(:last-child) {
+  margin-right: 30px;
+}
+
+#rr1:checked ~ .first {
+  margin-left: 0;
+}
+
+#rr2:checked ~ .first {
+  margin-left: -50%;
+}
+
+#rr3:checked ~ .first {
+  margin-left: -200%;
+}
+
+.container-DNR {
+  margin-top: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+}
+
+.container-DNR p, a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Epilogue", sans-serif;
+  color: #ffffff;
+}
+
+.container-DNR a {
+  display: inline-block;
+  height: 25px;
+  background: #4e0808;
+  padding: 4px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.container-DNR a:hover {
+  background: #3c3535;
+}
+
+.product {
+  flex-basis: 25%;
+  width: 205px;
+  height: 260px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.product img {
+  width: 200px;
+  height: 130px;
+}
+
+/* Cart CSS Starts */
+
+/* Cart CSS Ends */

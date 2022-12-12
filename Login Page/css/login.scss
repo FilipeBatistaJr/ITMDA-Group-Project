@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8b0000;
+}
+h1 {
+    font-weight: 800;
+    font-style: normal;
+    font-family: 'Epilogue', sans-serif;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+}
+h2 {
+    text-align: left;
+    padding-left: 15%;
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Epilogue', sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+}
+a {
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Epilogue', sans-serif;
+    color:#8b0000;
+    font-size: 12px;
+    text-align: center;
+    margin-right: 41%;
+}
+.logo{
+    background-color: #2c2828c7; 
+    border-radius: 20px;
+    margin-left: auto;
+    margin-top: 15px;
+}
+.container{
+    width: 350px;
+    height: 600px;
+    position: absolute;
+    border-radius: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #000000;
+
+}
+.textbox{
+    width: 250px;
+    height: 40px;
+    background: #8b0000;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.textbox input{
+    background: none;
+    border: none;
+    outline: none;
+    text-align: left;
+    width: 90%;
+    line-height: 37px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+.button{
+    width: 130px;
+    height: 40px;
+    background: #ff0000;
+    border-radius: 4px;
+    margin: 14px auto;
+    display: block;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 13px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.button:hover{
+    background: #f74949;
+}
+.b1{
+    display: block;
+    // margin-right: 10%;
+    // text-decoration: none;
+    // margin: auto;
+    transform: translate(70%, 40%);
+}
+.b2{
+    display: block;
+    // padding: 10px 0;
+    // left: 50%;
+    // text-align: center;
+    transform: translate(35%, -90%);
+    // bottom: 50%;
+    // left: 50%;
+}
+// a:hover{
+//     background: #808080;
+// }
